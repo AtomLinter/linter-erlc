@@ -5,7 +5,7 @@
   "linter-package": true,
   "main": "./lib/init",
   "description": "Bare Minimum Erlang lint package",
-  "repository": "https://github.com/JonGretar/linter-erlc",
+  "repository": "https://github.com/AtomLinter/linter-erlc",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
