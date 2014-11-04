@@ -1,0 +1,14 @@
+{
+  "name": "linter-erlc",
+  "version": "0.0.0",
+  "activationEvents": [],
+  "linter-package": true,
+  "main": "./lib/init",
+  "description": "Bare Minimum Erlang lint package",
+  "repository": "https://github.com/JonGretar/linter-erlc",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}
