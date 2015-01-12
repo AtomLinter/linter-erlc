@@ -14,11 +14,11 @@ class LinterErlc extends Linter
 
   constructor: (editor) ->
     super(editor)
-    atom.config.observe 'linter-erlc.elixircExecutablePath', =>
-      @executablePath = atom.config.get 'linter-erlc.elixircExecutablePath'
+    atom.config.observe 'linter-erlc.erlcExecutablePath', =>
+      @executablePath = atom.config.get 'linter-erlc.erlcExecutablePath'
 
   destroy: ->
-    atom.config.unobserve 'linter-erlc.elixircExecutablePath'
+    atom.config.unobserve 'linter-erlc.erlcExecutablePath'
 
   lintFile: (filePath, callback) ->
     @cwd = atom.project.path
