@@ -1,6 +1,6 @@
 {
   "name": "linter-erlc",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "linter-package": true,
   "main": "./lib/init",
   "description": "Bare Minimum Erlang lint package",
