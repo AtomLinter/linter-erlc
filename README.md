@@ -12,11 +12,11 @@ $ apm install linter-erlc
 ```
 
 ## Settings
-You can configure linter-elixirc by editing ~/.atom/config.cson (choose Open Your Config in Atom menu):
+You can configure linter-erlc by editing ~/.atom/config.cson (choose Open Your Config in Atom menu):
 
 ```
-'linter-elixirc':
-  'erlcExecutablePath': null #erlc path. run 'which erlc' to find the path
+'linter-erlc':
+  'executablePath': null #erlc path. run 'which erlc' to find the path
   'includeDirs': 'includes,other/paths' #comma seperated list of paths added with the -I flag
-	'pa': '~/.ebin' #comma seperated list of paths added with the -pa flag.
+  'pa': '~/.ebin' #comma seperated list of paths added with the -pa flag.
 ```
