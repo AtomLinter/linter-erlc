@@ -1,22 +1,27 @@
 {
-    "name": "linter-erlc",
-    "version": "0.3.0",
-    "linter-package": true,
-    "main": "./lib/init",
-    "description": "Bare Minimum Erlang lint package",
-    "repository": "https://github.com/AtomLinter/linter-erlc",
-    "license": "MIT",
-    "engines": {
-        "atom": ">0.50.0"
-    },
-    "dependencies": {
-        "atom-linter": "^3.2.0"
-    },
-    "providedServices": {
-        "linter": {
-            "versions": {
-                "1.0.0": "provideLinter"
-            }
-        }
+  "name": "linter-erlc",
+  "version": "0.3.0",
+  "linter-package": true,
+  "main": "./lib/init",
+  "description": "Bare Minimum Erlang lint package",
+  "repository": "https://github.com/AtomLinter/linter-erlc",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-linter": "^4.3.2",
+    "atom-package-deps": "^3.0.7"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
     }
+  },
+  "package-deps": [
+    "linter",
+    "language-erlang"
+  ]
 }
