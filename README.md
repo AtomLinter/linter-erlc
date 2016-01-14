@@ -12,15 +12,6 @@ $ apm install linter-erlc
 ```
 
 ## Settings
-You can configure linter-erlc by editing ~/.atom/config.cson (choose Open Your Config in Atom menu):
-
-```
-'linter-erlc':
-  'executablePath': null #erlc path. run 'which erlc' to find the path
-  'includeDirs': 'includes,other/paths' #comma seperated list of paths added with the -I flag
-  'pa': '~/.ebin' #
-```
-
 All of linter-erlc's settings are available from within Atom's settings menu.
 If you prefer to manually edit the configuration file the following settings
 are available:
@@ -29,6 +20,6 @@ are available:
     correct location. If you need to override this specify the full path to
     `erlc`.
 
-*   `includeDirs`: You can add a comma seperated list of paths that need to be included by erlc. You can add relative paths to the project root directory. The project must be in OTP style for it to resolve the project root. For example: `includes,other/paths`.
+*   `includeDirs`: You can add a comma separated list of paths that need to be included by `erlc`. You can add relative paths to the project root directory. The project must be in OTP style for it to resolve the project root. For example: `includes, other/paths`.
 
-*   `pa`: A comma seperated list of paths added with the -pa flag. For example `~/.ebin`
+*   `pa`: A comma separated list of paths added with the -pa flag. For example `~/.ebin, /opt/ebins`
