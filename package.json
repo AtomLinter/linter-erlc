@@ -1,11 +1,21 @@
 {
+  "private": true,
   "name": "linter-erlc",
   "version": "0.3.1",
-  "linter-package": true,
   "main": "./lib/init",
   "description": "Bare Minimum Erlang lint package",
   "repository": "https://github.com/AtomLinter/linter-erlc",
   "license": "MIT",
+  "keywords": [
+    "atom",
+    "erlang",
+    "linter",
+    "erlc"
+  ],
+  "scripts": {
+    "test": "apm test",
+    "lint": "eslint ."
+  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
@@ -24,5 +34,31 @@
   "package-deps": [
     "linter",
     "language-erlang"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "globals": {
+      "atom": true
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    }
+  }
 }
