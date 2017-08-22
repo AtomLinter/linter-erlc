@@ -7,6 +7,12 @@
   "description": "Bare Minimum Erlang lint package",
   "repository": "https://github.com/AtomLinter/linter-erlc",
   "license": "MIT",
+  "keywords": [
+    "atom",
+    "erlang",
+    "linter",
+    "erlc"
+  ],
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
