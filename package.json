@@ -16,8 +16,30 @@
     "test": "apm test",
     "lint": "eslint ."
   },
+  "configSchema": {
+    "executablePath": {
+      "type": "string",
+      "default": "erlc"
+    },
+    "includeDirs": {
+      "type": "array",
+      "description": "A comma separated list of paths included by erlc with the -I flag",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
+    "pa": {
+      "type": "array",
+      "description": "A comma separated list of paths added with the -pa flag",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    }
+  },
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.4.0 <2.0.0"
   },
   "dependencies": {
     "atom-linter": "^10.0.0",
