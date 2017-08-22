@@ -13,6 +13,10 @@
     "linter",
     "erlc"
   ],
+  "scripts": {
+    "test": "apm test",
+    "lint": "eslint ."
+  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
