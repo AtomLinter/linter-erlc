@@ -10,19 +10,17 @@ const badPath = path.join(__dirname, 'fixtures', 'bad.erl');
 const emptyPath = path.join(__dirname, 'fixtures', 'empty.erl');
 
 describe('The ERLC provider for Linter', () => {
-  const lint = linter.provideLinter().lint;
+  const { lint } = linter.provideLinter();
 
   beforeEach(async () => {
     await atom.packages.activatePackage('linter-erlc');
   });
 
   it('should be in the packages list', () =>
-    expect(atom.packages.isPackageLoaded('linter-erlc')).toBe(true),
-  );
+    expect(atom.packages.isPackageLoaded('linter-erlc')).toBe(true));
 
   it('should be an active package', () =>
-    expect(atom.packages.isPackageActive('linter-erlc')).toBe(true),
-  );
+    expect(atom.packages.isPackageActive('linter-erlc')).toBe(true));
 
   it('finds nothing wrong with a valid file', async () => {
     const editor = await atom.workspace.open(goodPath);
