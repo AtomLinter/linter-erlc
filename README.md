@@ -1,5 +1,9 @@
 # linter-erlc
 
+[![Build Status](https://circleci.com/gh/AtomLinter/linter-erlc.svg?style=shield)](https://circleci.com/gh/AtomLinter/linter-erlc.svg?style=shield)
+[![Dependency Status](https://david-dm.org/AtomLinter/linter-erlc.svg)](https://david-dm.org/AtomLinter/linter-erlc)
+
+
 This linter plugin for [Linter](https://github.com/AtomLinter/Linter) provides an interface to erlc. It will be used with files that have the "source.erlang" syntax.
 
 
