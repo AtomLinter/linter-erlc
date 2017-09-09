@@ -58,7 +58,7 @@
     "language-erlang"
   ],
   "devDependencies": {
-    "eslint": "^4.3.0",
+    "eslint": "^4.6.0",
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-plugin-import": "^2.7.0",
     "jasmine-fix": "^1.3.0"
