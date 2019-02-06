@@ -37,10 +37,10 @@ describe('The ERLC provider for Linter', () => {
     const expected = 'function unknown/0 undefined';
     const messages = await lint(editor);
 
-    expect(messages[0].type).toBe('Error');
-    expect(messages[0].text).toBe(expected);
-    expect(messages[0].filePath).toBe(badPath);
-    expect(messages[0].range).toEqual([[1, 0], [1, 21]]);
+    expect(messages[0].severity).toBe('error');
+    expect(messages[0].excerpt).toBe(expected);
+    expect(messages[0].location.file).toBe(badPath);
+    expect(messages[0].location.position).toEqual([[1, 0], [1, 21]]);
   });
 
   it('shows errors in an empty file', async () => {
@@ -48,9 +48,9 @@ describe('The ERLC provider for Linter', () => {
     const expected = 'no module definition';
     const messages = await lint(editor);
 
-    expect(messages[0].type).toBe('Error');
-    expect(messages[0].text).toBe(expected);
-    expect(messages[0].filePath).toBe(emptyPath);
-    expect(messages[0].range).toEqual([[0, 0], [0, 0]]);
+    expect(messages[0].severity).toBe('error');
+    expect(messages[0].excerpt).toBe(expected);
+    expect(messages[0].location.file).toBe(emptyPath);
+    expect(messages[0].location.position).toEqual([[0, 0], [0, 0]]);
   });
 });
