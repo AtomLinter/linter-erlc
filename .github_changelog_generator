@@ -1,0 +1,5 @@
+user=Atomlinter
+project=linter-erlc
+unreleased=true
+future-release=v0.5.0
+exclude_labels=duplicate,question,invalid,wontfix

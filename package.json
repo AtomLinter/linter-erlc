@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "linter-erlc",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "main": "./lib/init",
   "description": "Bare Minimum Erlang lint package",
   "repository": "https://github.com/AtomLinter/linter-erlc",
