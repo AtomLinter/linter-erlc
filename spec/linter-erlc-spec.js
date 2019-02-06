@@ -1,7 +1,9 @@
 'use babel';
 
-// eslint-disable-next-line no-unused-vars
-import { it, fit, wait, beforeEach, afterEach } from 'jasmine-fix';
+import {
+  // eslint-disable-next-line no-unused-vars
+  it, fit, wait, beforeEach, afterEach,
+} from 'jasmine-fix';
 import * as path from 'path';
 import linter from '../lib/init';
 
@@ -16,11 +18,13 @@ describe('The ERLC provider for Linter', () => {
     await atom.packages.activatePackage('linter-erlc');
   });
 
-  it('should be in the packages list', () =>
-    expect(atom.packages.isPackageLoaded('linter-erlc')).toBe(true));
+  it('should be in the packages list', () => (
+    expect(atom.packages.isPackageLoaded('linter-erlc')).toBe(true)
+  ));
 
-  it('should be an active package', () =>
-    expect(atom.packages.isPackageActive('linter-erlc')).toBe(true));
+  it('should be an active package', () => (
+    expect(atom.packages.isPackageActive('linter-erlc')).toBe(true)
+  ));
 
   it('finds nothing wrong with a valid file', async () => {
     const editor = await atom.workspace.open(goodPath);
