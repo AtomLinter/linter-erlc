@@ -83,5 +83,10 @@
       "node": true,
       "browser": true
     }
+  },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ]
   }
 }
